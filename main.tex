@@ -1,0 +1,141 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false,backend=biber]{biblatex}
+\usepackage{geometry}  
+\geometry{a4paper,left=25mm,right=20mm,top=40mm,bottom=25mm}
+\usepackage{pageslts,refcount}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\bibliography{references_cv}
+\usepackage{simplecv}
+
+\cfoot{\thepage\ of \pageref{LastPage}}               
+\rfoot{\ifnum\value{page}=\pageref{LastPage} \textit{Last Updated: \today} \fi}
+
+\begin{document}
+
+% Heading
+\headinginline{Saurabh Kumar}{
+    Google Scholar: \website{tinyurl.com/4pyub4pd} \\
+    GitHub: \github{saurabhk0317} \\
+    Email: \email{saurabhk0317@gmail.com} \\
+    LinkedIn: \linkedin{saurabhk0317}
+}
+
+\section{Education}
+\textbf{B.Tech. in Electronics and Communication Engineering} \hfill 2016\textendash 2020 \\
+\textbf{National Institute of Technology, Patna} \\
+GPA: 7.42/10.00
+\begin{itemize}
+    \item \textbf{Capstone Project:} "Simulation of Hybrid Plasmonic Waveguides Based Devices and Its Applications"
+    \begin{itemize}
+        \item Conducted simulations and analyzed hybrid plasmonic waveguide-based devices using COMSOL Multiphysics.
+        \item \textbf{Advisor:} Dr. R. Ranjan
+    \end{itemize}
+\end{itemize}
+
+\section{Experience}
+\textbf{Research Associate} \hfill July 2021\textendash Present \\
+\textbf{SPIRE Lab, IISc Bangalore, India} \\
+Advisor: \textbf{Prof. Prasanta Kumar Ghosh}
+\begin{itemize}
+  \item \href{https://respin.iisc.ac.in/}{\textbf{RESPIN:}} \textit{Speech Recognition in Agriculture and Finance for the Poor in India} \\
+  Publications: \cite{ICASSP25_DID, IS24_ASR, ASRU23_RESPIN, SPECOM23_RESPIN}
+  \begin{itemize}
+    \item Developed a \textbf{multimodal fusion framework} that integrates dialectal cues from \textbf{speech and text} to improve \textbf{joint ASR and DID performance} (\textit{Under review}).
+    
+    \item Proposed a \textbf{multimodal dialect identification (DID) system} that integrates \textbf{ASR speech representations and RoBERTa-based text embeddings}, achieving an \textbf{average DID accuracy of 79.81\%} across \textbf{eight Indian languages and 33 dialects}~\cite{ICASSP25_DID}.
+    
+    \item Implemented \textbf{adapter-based domain adaptation} to bridge the performance gap in \textbf{low-resource ASR fine-tuning}, reducing \textbf{WER and CER relatively by 10\%-30\% and 3\%-18\%, respectively}, in nine Indian languages~\cite{IS24_ASR}.
+    
+    \item Developed a \textbf{Gated Multi-Encoder ASR model}, leveraging \textbf{frame-level gating mechanisms} to learn dialectal variations in Indian languages, achieving a \textbf{7.5\% and 9\% relative WER reduction} in Bhojpuri and Bengali ASR, respectively~\cite{ASRU23_RESPIN}.
+  \end{itemize}
+
+  \item \href{https://syspin.iisc.ac.in/}{\textbf{SYSPIN:}} \textit{Text-to-Speech Synthesizer in Nine Indian Languages} \\
+  Publications: \cite{LIMMITS24_OJSP2025,SPECOM23_SYSPIN}
+  \begin{itemize}
+    \item Designed a \textbf{data filtering pipeline} using Kaldi-based ASR models, improving corpus quality.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Machine Learning/Signal Processing Consulting Engineer} \hfill Sep 2022\textendash Present \\
+\textbf{ARTPARK, IISc Bangalore, India} \\
+Project: \href{https://vaani.iisc.ac.in/}{\textbf{VAANI:}} \textit{Capturing the language landscape for an inclusive digital India}
+\begin{itemize}
+  \item Curated \textbf{large-scale speech and text corpora} covering \textbf{773 Indian districts}.
+  \item Built \textbf{efficient data pipelines} by employing \textbf{signal processing and machine learning techniques}, ensuring high transcription accuracy.
+\end{itemize}
+
+\textbf{Undergraduate Student Researcher} \hfill July 2019\textendash June 2020, Dec 2020\textendash June 2021 \\
+\textbf{Department of ECE, NIT Patna, India} \\
+\textbf{Advisor: Dr. S. Shahanawazuddin} \\
+Publications: ~\cite{Syed2021_APAC, Syed2021_DSP}
+\begin{itemize}
+  \item Investigated \textbf{formant-modification-based data augmentation} and \textbf{bispectrum-based front-end feature extraction} to reduce pitch-induced acoustic mismatch, enhancing \textbf{zero-resource children’s ASR}~\cite{Syed2021_APAC}.
+  \item Developed a \textbf{CGAN-based voice conversion framework} to transform adult speech into child-like speech, improving ASR robustness in \textbf{low-resource and mismatched conditions}~\cite{Syed2021_DSP}.
+\end{itemize}
+
+
+\textbf{Summer Intern} \hfill May 2019\textendash June 2019 \\
+\textbf{EICT Academy, IIT Guwahati, India}
+\begin{itemize}
+  \item Designed \textbf{Verilog code for a 5-stage discrete wavelet transform cascade filter bank} for FPGA-based simulation.
+\end{itemize}
+
+\section{Conferences and Workshops}
+\textbf{Reviewer for International Conferences}
+\begin{itemize}
+  \item \textbf{ICASSP 2024, ICASSP 2025, IJCNN 2025} – Reviewed papers on speech processing and machine learning.
+\end{itemize}
+
+\textbf{LIMMITS’24 Challenge - ICASSP 2024}
+\begin{itemize}
+  \item Co-hosted \textbf{LIMMITS’24: Multi-speaker, Multi-lingual Indic TTS with Voice Cloning} at ICASSP 2024, Seoul.
+  \item Contributed to \textbf{data curation and baseline model development}.
+\end{itemize}
+
+\textbf{MADASR Challenge - ASRU 2023}
+\begin{itemize}
+  \item \textbf{Organizing team member} for the \textbf{Model Adaptation for ASR in Low-Resource Indian Languages} challenge.
+  \item Contributed to \textbf{data curation and baseline ASR models} in \textbf{Bengali and Bhojpuri}.
+\end{itemize}
+
+\textbf{SLT-CODE Hackathon 2022}
+\begin{itemize}
+  \item \textbf{Best Hackathon Project Award} for \textbf{dialectal speech recognition in Bengali and Bhojpuri}.
+  \item Developed \textbf{Kaldi-based ASR models} and curated training/testing data.
+  \item \textbf{Presented findings at SLT 2022}.
+\end{itemize}
+
+\printbibliography[title=Publications]
+
+\section{Extracurricular Activities}
+
+\begin{itemize}
+\entry{Served as a student volunteer at ICASSP 2024, assisting with various organizational tasks, guide assistance and session management}
+\entry{Web coordinator of Yoga and Meditation Club of NIT Patna in 2018-19.}
+\entry{Member of the organizing committee of the annual cultural fest of NIT Patna in 2018.}
+\entry{Co-organized a fundraising project to help flood-affected people of Bihar in 2017.}
+\end{itemize}
+
+\section{Languages and Skills}
+\begin{minipage}{0.48\textwidth}
+    \textbf{Languages}
+    \begin{itemize}
+        \item \textbf{Programming:} Python, Bash, PHP
+        \item \textbf{Natural:} Bhojpuri, English, Hindi, Maithili
+        \item \textbf{TOEFL:} 94/120 (R: 23, L: 26, S: 23, W: 22)
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+    \textbf{Skills}
+    \begin{itemize}
+        \item \textbf{ML/DL Toolkits:} PyTorch, Scikit-learn
+        \item \textbf{ASR Frameworks:} ESPnet, Kaldi, Fairseq
+        \item \textbf{Others:} MATLAB, Audacity, Praat, Git
+    \end{itemize}
+\end{minipage}
+
+\end{document}
