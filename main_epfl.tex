@@ -1,0 +1,147 @@
+\documentclass[letterpaper,11pt]{article}
+
+% \usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false,backend=biber]{biblatex}
+
+\usepackage[style=ieee,url=true,doi=true,maxbibnames=99,sorting=none,dashed=false,backend=biber]{biblatex}
+
+\usepackage{geometry}  
+\geometry{a4paper,left=25mm,right=20mm,top=40mm,bottom=25mm}
+\usepackage{pageslts,refcount}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\bibliography{references_cv}
+\usepackage{simplecv}
+\usepackage{needspace}
+\hypersetup{colorlinks=true, urlcolor=blue!60!black, linkcolor=black, citecolor=black}
+
+% Show the full LinkedIn path, matching \github
+\renewcommand{\linkedin}[1]{\href{https://www.linkedin.com/in/#1/}{linkedin.com/in/#1}}
+
+% Wider contact column so the LinkedIn line stays on one line
+\renewcommand{\headinginline}[2]{
+    \begin{minipage}[t]{0.45\textwidth}
+    \vspace*{\fill}
+    \Huge \textcolor{color-title}{#1}
+    \end{minipage}
+    \begin{minipage}[t]{0.50\textwidth}
+    \begin{flushright}
+    #2
+    \end{flushright}
+    \end{minipage}
+}
+
+\cfoot{\thepage\ of \pageref{LastPage}}               
+\rfoot{\ifnum\getpagerefnumber{VeryLastPage}=\value{page} \textit{Last Updated: \today} \fi}
+
+\begin{document}
+
+% Heading
+\headinginline{Saurabh Kumar}{
+    Google Scholar: \href{https://scholar.google.com/citations?hl=en\&user=soOjpoYAAAAJ}{scholar.google.com} \\
+    GitHub: \github{saurabhk0317} \\
+    Email: \email{saurabhk0317@gmail.com} \\
+    LinkedIn: \linkedin{saurabhk0317}
+}
+
+\section{Education}
+\textbf{Indian Institute of Science (IISc)} \hfill Bengaluru, India\\
+M.Tech. (Research) in Electrical Engineering \hfill 2026\textendash Present\\
+Advisor: Prof. Prasanta Kumar Ghosh (SPIRE Lab) \\
+GATE 2026 (Data Science and AI): AIR 362/69{,}242 (top 0.5\%) \\
+Publications: \cite{kumar2026wsasr}
+\begin{itemize}
+  \item Proposed a CTC training criterion with token-level wildcard arcs that tolerates localized transcription ambiguity (pronunciation, spelling, lexical variants), achieving a \textbf{9.45\% average relative WER reduction over CTC} across multiple languages and corpora~\cite{kumar2026wsasr}.
+\end{itemize}
+
+\medskip
+\textbf{National Institute of Technology, Patna} \hfill Patna, India\\
+B.Tech. in Electronics and Communication Engineering \hfill 2016\textendash 2020 \\
+GPA: 7.42/10.00
+
+\section{Experience}
+\textbf{SPIRE Lab, Indian Institute of Science (IISc)} \hfill Bengaluru, India\\
+Research Associate \hfill July 2021\textendash July 2026 \\
+Advisor: Prof. Prasanta Kumar Ghosh \\
+Projects:
+\begin{itemize}
+  \item \href{https://respin.iisc.ac.in/}{\textbf{RESPIN}}: \textit{Speech Recognition in Agriculture and Finance for the Poor in India} (funded by the Gates Foundation) \\
+  Publications: \cite{kumar2025respins, ASRU25_MADASR2, Saurabh_IS25, ICASSP25_DID, IS24_ASR, ASRU23_RESPIN}
+  \begin{itemize}
+    \item First author of the RESPIN-S1.0 database paper published at \textbf{NeurIPS 2025 (Datasets and Benchmarks Track)}; led large-scale data curation, reproducible benchmarking, and baseline ASR development across nine Indian languages~\cite{kumar2025respins}.
+    
+    \item Developed a multimodal fusion model for joint ASR and dialect identification (DID) (\textbf{4.65\% CER and 81.63\% DID accuracy}), integrating speech and text embeddings for Indian dialects~\cite{Saurabh_IS25}.
+    
+    \item Led the first large-scale study on DID in Indian languages (\textbf{79.81\% accuracy across 33 dialects})~\cite{ICASSP25_DID}.
+    
+    \item Enhanced low-resource ASR via adapter-based domain adaptation, reducing \textbf{WER (10\%-30\%)} and \textbf{CER (3\%-18\%)} across 9 languages~\cite{IS24_ASR}.
+    
+    \item Proposed a Gated Multi-Encoder ASR model with frame-level gating, reducing \textbf{WER by 7.5\% (Bhojpuri) and 9\% (Bengali)}~\cite{ASRU23_RESPIN}.
+  \end{itemize}
+
+  \item \href{https://syspin.iisc.ac.in/}{\textbf{SYSPIN}}: \textit{Text-to-Speech Synthesizer in Nine Indian Languages} (funded by GIZ, Germany) \\
+  Publications: \cite{LIMMITS24_OJSP2025}
+  \begin{itemize}
+    \item Developed a data filtering pipeline using Kaldi-based ASR models, improving corpus quality.
+  \end{itemize}
+\end{itemize}
+
+\textbf{ARTPARK @ IISc} \hfill Bengaluru, India\\
+Machine Learning/Signal Processing Consulting Engineer \hfill Sep 2022\textendash July 2026 \\
+Project: 
+\begin{itemize}
+\item \href{https://vaani.iisc.ac.in/}{\textbf{VAANI}}: \textit{Capturing the language landscape for an inclusive digital India} (funded by Google) \\
+  Publications: \cite{pulikodan2026vaani}
+\begin{itemize}
+  \item Developed automated signal processing and machine learning pipelines for acoustic quality assessment, speech activity detection, and metadata validation.
+  \item Established quantitative acceptance criteria and automated corpus curation protocols underpinning the open-source release of \textbf{31{,}000+ hours} of speech from \textbf{156{,}000+ speakers} across \textbf{109 languages} and \textbf{31 states and union territories}.
+\end{itemize}
+\end{itemize}
+
+\textbf{Department of ECE, NIT Patna} \hfill Patna, India\\
+Undergraduate Student Researcher \hfill July 2019\textendash June 2021 \\
+Advisor: Dr. S. Shahnawazuddin \\
+Publications: ~\cite{Syed2021_APAC, Syed2021_DSP}
+\begin{itemize}
+  \item Investigated formant-modification and bispectrum-based front-end features to improve children’s ASR under zero-resource conditions~\cite{Syed2021_APAC}.
+  \item Developed a CGAN-based voice conversion framework, transforming adult speech into child-like speech for ASR adaptation~\cite{Syed2021_DSP}.
+\end{itemize}
+
+\section{Professional Service}
+
+\textbf{Reviewer:}
+\begin{itemize}
+    \item \textbf{Conferences and Workshops:} ICASSP (since 2025), IJCNN (since 2025), IEEE ASRU 2025, Interspeech (since 2026), IEEE SLT 2026.
+    \item \textbf{Journals:} Computer Speech \& Language (Elsevier), Speech Communication (Elsevier).
+\end{itemize}
+
+\textbf{Organizer:}  
+\begin{itemize}
+    \item \textbf{ASRU 2025 (MADASR 2.0):} Lead organizer of the Multi-Lingual Multi-Dialect ASR Challenge in 8 Indian Languages; designed challenge tracks, evaluation protocols, public leaderboards, developed ESPnet-based baseline systems, and reviewed challenge track submissions.
+    \item \textbf{ICASSP 2024 (LIMMITS’24):} Co-organized session on Indic TTS, developed baselines, and reviewed challenge track submissions.
+    \item \textbf{ASRU 2023 (MADASR):} Led data curation, ASR baselines for Bengali, Bhojpuri.
+    \item \textbf{Interspeech 2022 (Gram Vaani ASR):} Organized Hindi ASR challenge, developed Kaldi baselines.
+\end{itemize}
+
+\textbf{Student Volunteer:} ICASSP 2024, ICASSP 2025.  
+  
+
+\section{Awards}
+\textbf{SLT-CODE Hackathon Winner 2022} – Won \textbf{Best Hackathon Project} Award for developing dialectal ASR systems for Bengali and Bhojpuri, presented at \textbf{SLT 2022}.
+
+\needspace{6\baselineskip}
+\section{Languages and Skills}
+\begin{itemize}[nosep]
+    \item \textbf{Programming:} Python, Bash
+    \item \textbf{ML/DL Toolkits:} PyTorch, Scikit-learn
+    \item \textbf{ASR Frameworks:} ESPnet, Kaldi, Fairseq
+    \item \textbf{Tools:} MATLAB, Audacity, Praat, Git, Hugging Face, Linux, Docker, \LaTeX
+    \item \textbf{Languages Spoken:} Bhojpuri, English, Hindi, Maithili
+    % \item \textbf{TOEFL:} 94 (Reading: 23, Listening: 26, Speaking: 23, Writing: 22)
+\end{itemize}
+
+\section{Selected Publications}
+{\small See \href{https://scholar.google.com/citations?user=soOjpoYAAAAJ}{Google Scholar} for a complete list.}
+\printbibliography[heading=none]
+
+\end{document}

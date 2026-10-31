@@ -12,6 +12,7 @@
 \pagestyle{fancy}
 \bibliography{references_cv}
 \usepackage{simplecv}
+\hypersetup{colorlinks=true, urlcolor=blue!60!black, linkcolor=black, citecolor=black}
 
 \cfoot{\thepage\ of \pageref{LastPage}}               
 \rfoot{\ifnum\getpagerefnumber{VeryLastPage}=\value{page} \textit{Last Updated: \today} \fi}
@@ -47,7 +48,7 @@ Research Associate \hfill July 2021\textendash July 2026 \\
 Advisor: Prof. Prasanta Kumar Ghosh \\
 Projects:
 \begin{itemize}
-  \item \href{https://respin.iisc.ac.in/}{\textbf{RESPIN}}: \textit{Speech Recognition in Agriculture and Finance for the Poor in India} \\
+  \item \href{https://respin.iisc.ac.in/}{\textbf{RESPIN}}: \textit{Speech Recognition in Agriculture and Finance for the Poor in India} (funded by the Gates Foundation) \\
   Publications: \cite{kumar2025respins, ASRU25_MADASR2, Saurabh_IS25, ICASSP25_DID, IS24_ASR, ASRU23_RESPIN}
   \begin{itemize}
     \item First author of the RESPIN-S1.0 database paper published at \textbf{NeurIPS 2025 (Datasets and Benchmarks Track)}; led large-scale data curation, reproducible benchmarking, and baseline ASR development across nine Indian languages~\cite{kumar2025respins}.
@@ -61,7 +62,7 @@ Projects:
     \item Proposed a Gated Multi-Encoder ASR model with frame-level gating, reducing \textbf{WER by 7.5\% (Bhojpuri) and 9\% (Bengali)}~\cite{ASRU23_RESPIN}.
   \end{itemize}
 
-  \item \href{https://syspin.iisc.ac.in/}{\textbf{SYSPIN}}: \textit{Text-to-Speech Synthesizer in Nine Indian Languages} \\
+  \item \href{https://syspin.iisc.ac.in/}{\textbf{SYSPIN}}: \textit{Text-to-Speech Synthesizer in Nine Indian Languages} (funded by GIZ, Germany) \\
   Publications: \cite{LIMMITS24_OJSP2025}
   \begin{itemize}
     \item Developed a data filtering pipeline using Kaldi-based ASR models, improving corpus quality.
@@ -72,7 +73,8 @@ Projects:
 Machine Learning/Signal Processing Consulting Engineer \hfill Sep 2022\textendash July 2026 \\
 Project: 
 \begin{itemize}
-\item \href{https://vaani.iisc.ac.in/}{\textbf{VAANI}}: \textit{Capturing the language landscape for an inclusive digital India}
+\item \href{https://vaani.iisc.ac.in/}{\textbf{VAANI}}: \textit{Capturing the language landscape for an inclusive digital India} (funded by Google) \\
+  Publications: \cite{pulikodan2026vaani}
 \begin{itemize}
   \item Developed automated signal processing and machine learning pipelines for acoustic quality assessment, speech activity detection, and metadata validation.
   \item Established quantitative acceptance criteria and automated corpus curation protocols underpinning the open-source release of \textbf{31{,}000+ hours} of speech from \textbf{156{,}000+ speakers} across \textbf{109 languages} and \textbf{31 states and union territories}.
@@ -116,26 +118,19 @@ Summer Intern \hfill May 2019\textendash June 2019 \\
 \section{Awards}
 \textbf{SLT-CODE Hackathon Winner 2022} – Won \textbf{Best Hackathon Project} Award for developing dialectal ASR systems for Bengali and Bhojpuri, presented at \textbf{SLT 2022}.
 
-
-\printbibliography[title=\textbf{Selected Publications}]
-
+\needspace{6\baselineskip}
 \section{Languages and Skills}
-\begin{minipage}{0.48\textwidth}
-    \textbf{Languages}
-    \begin{itemize}
-        \item \textbf{Programming:} Python, Bash, PHP
-        \item \textbf{Natural:} Bhojpuri, English, Hindi, Maithili
-        % \item \textbf{TOEFL:} 94 (Reading: 23, Listening: 26, Speaking: 23, Writing: 22)
-    \end{itemize}
-\end{minipage}
-\hfill
-\begin{minipage}{0.48\textwidth}
-    \textbf{Skills}
-    \begin{itemize}
-        \item \textbf{ML/DL Toolkits:} PyTorch, Scikit-learn
-        \item \textbf{ASR Frameworks:} ESPnet, Kaldi, Fairseq
-        \item \textbf{Others:} MATLAB, Audacity, Praat, Git
-    \end{itemize}
-\end{minipage}
+\begin{itemize}[nosep]
+    \item \textbf{Programming:} Python, Bash
+    \item \textbf{ML/DL Toolkits:} PyTorch, Scikit-learn
+    \item \textbf{ASR Frameworks:} ESPnet, Kaldi, Fairseq
+    \item \textbf{Tools:} MATLAB, Audacity, Praat, Git, Hugging Face, Linux, Docker, \LaTeX
+    \item \textbf{Languages Spoken:} Bhojpuri, English, Hindi, Maithili
+    % \item \textbf{TOEFL:} 94 (Reading: 23, Listening: 26, Speaking: 23, Writing: 22)
+\end{itemize}
+
+\section{Selected Publications}
+{\small See \href{https://scholar.google.com/citations?user=soOjpoYAAAAJ}{Google Scholar} for a complete list.}
+\printbibliography[heading=none]
 
 \end{document}
