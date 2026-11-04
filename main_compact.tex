@@ -12,7 +12,11 @@
 \pagestyle{fancy}
 \bibliography{references_cv}
 \usepackage{simplecv}
+\usepackage{needspace}
 \hypersetup{colorlinks=true, urlcolor=blue!60!black, linkcolor=black, citecolor=black}
+
+% Show the full LinkedIn path, matching \github
+\renewcommand{\linkedin}[1]{\href{https://www.linkedin.com/in/#1/}{linkedin.com/in/#1}}
 
 \cfoot{\thepage\ of \pageref{LastPage}}               
 \rfoot{\ifnum\getpagerefnumber{VeryLastPage}=\value{page} \textit{Last Updated: \today} \fi}
@@ -21,7 +25,8 @@
 
 % Heading
 \headinginline{Saurabh Kumar}{
-    Google Scholar: \website{tinyurl.com/4pyub4pd} \\
+    Website: \website{saurabhk0317.github.io} \\
+    Google Scholar: \href{https://scholar.google.com/citations?hl=en\&user=soOjpoYAAAAJ}{scholar.google.com} \\
     GitHub: \github{saurabhk0317} \\
     Email: \email{saurabhk0317@gmail.com} \\
     LinkedIn: \linkedin{saurabhk0317}
@@ -31,7 +36,7 @@
 \textbf{Indian Institute of Science (IISc)} \hfill Bengaluru, India\\
 M.Tech. (Research) in Electrical Engineering \hfill 2026\textendash Present\\
 Advisor: Prof. Prasanta Kumar Ghosh (SPIRE Lab) \\
-GATE 2026 (Data Science and AI): AIR 362/69{,}242 \\
+GATE 2026 (Data Science and AI): AIR 362/69{,}242 (top 0.5\%) \\
 Publications: \cite{kumar2026wsasr}
 \begin{itemize}
   \item Proposed a CTC training criterion with token-level wildcard arcs that tolerates localized transcription ambiguity (pronunciation, spelling, lexical variants), achieving a \textbf{9.45\% average relative WER reduction over CTC} across multiple languages and corpora~\cite{kumar2026wsasr}.
@@ -96,7 +101,7 @@ Summer Intern \hfill May 2019\textendash June 2019 \\
   \item Designed Verilog code for a 5-stage discrete wavelet transform cascade filter bank for FPGA-based simulation.
 \end{itemize}
 
-\section{Mentorship \& Professional Services}
+\section{Professional Service}
 
 \textbf{Reviewer:}
 \begin{itemize}
@@ -123,7 +128,7 @@ Summer Intern \hfill May 2019\textendash June 2019 \\
 \begin{itemize}[nosep]
     \item \textbf{Programming:} Python, Bash
     \item \textbf{ML/DL Toolkits:} PyTorch, Scikit-learn
-    \item \textbf{ASR Frameworks:} ESPnet, Kaldi, Fairseq
+    \item \textbf{ASR Frameworks:} ESPnet, Icefall, Kaldi, Fairseq
     \item \textbf{Tools:} MATLAB, Audacity, Praat, Git, Hugging Face, Linux, Docker, \LaTeX
     \item \textbf{Languages Spoken:} Bhojpuri, English, Hindi, Maithili
     % \item \textbf{TOEFL:} 94 (Reading: 23, Listening: 26, Speaking: 23, Writing: 22)
